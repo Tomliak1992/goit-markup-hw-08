@@ -1,0 +1,58 @@
+.footer-form-cection {
+    position: relative;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+}
+.footer-form-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $wright-color;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+}
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+        &:focus {
+        border: 1px solid $wright-color;
+        outline: none;
+        color: $wright-color;
+        }
+}
+.footer-form__button {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    padding: 10px 29px;
+    cursor: pointer;
+    border: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $wright-color;
+}
+.footer-form__icon {
+    fill: $wright-color;
+    margin-left: 10px;
+}

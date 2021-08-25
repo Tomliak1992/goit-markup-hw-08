@@ -1,0 +1,33 @@
+.clients {
+    display: flex;
+}
+  
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+.clients__link {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        padding: 16px 32px;
+        cursor: pointer;
+        color: #afb1b8;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        border-color: $accent-color;
+        }
+}
+.clients__icon {
+    margin: 0;
+    padding: 0;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+    fill: $accent-color;
+}

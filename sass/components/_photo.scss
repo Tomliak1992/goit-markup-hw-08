@@ -1,0 +1,29 @@
+.photo-section {
+    display: flex;
+    justify-content: space-between;
+} 
+.photo-section__thumb {
+    position: relative;
+}
+.photo-section__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.photo-section__text {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: $wright-color;
+}
+
+.section__padding-reset {
+    padding-top: 0px;
+}
