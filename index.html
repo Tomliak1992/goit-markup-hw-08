@@ -12,7 +12,6 @@
     <title>Студия</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
@@ -21,6 +20,18 @@
         <div class="container logo">
             <a class="logo__link" href="/">Web<span class="logo__span--black">Studio</span></a>
             <nav>
+                <button 
+                class="mobile-menu is-open" 
+                data-menu-button 
+                aria-expanded="false" 
+                aria-controls="menu-container" 
+                type="button">
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="mobile-menu__icon" href="./images/icons.svg#icon-menu_24px"></use>
+                        <use class="mobile-menu__close" href="./images/icons.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container is-open" data-menu id="menu-container"></div>
                 <ul class="navigation">
                     <li class="navigation__item">
                         <a class="navigation__link navigation__link--current" href="./index.html">Студия</a>
@@ -158,7 +169,7 @@
         <!--section with photos-->
         <section class="section section__padding-reset">
             <div class="container">
-                <h2 class="section__title">Чем мы занимаемся</h2>
+                <h2 class="section__title section__title--visually-hidden">Чем мы занимаемся</h2>
                 <ul class="photo-section">
                     <li>
                         <div class="photo-section__thumb">
@@ -460,6 +471,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

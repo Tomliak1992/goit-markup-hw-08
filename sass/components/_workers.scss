@@ -1,10 +1,10 @@
 .section--background {
     background-color: #f5f4fa;
 }
-.workers {
-    display: flex;
-    justify-content: space-between;
-}
+// .workers {
+//         display: flex;
+//         justify-content: space-between;
+// }
 .workers__title {
         font-weight: 500;
         font-size: 16px;
@@ -22,22 +22,22 @@
 }
 .workers__thumb {
         text-align: center;
-        padding-top: 30px;
-        padding-bottom: 36px;
+        // padding-top: 30px;
+        // padding-bottom: 36px;
         background-color: $wright-color;
         border-radius: inherit;
 }
 
-.workers-social {
-        display: flex;
-        justify-content: center;
-}
+// .workers-social {
+//         display: flex;
+//         justify-content: center;
+// }
 .workers-social__link {
         content: '';
         width: 44px;
         height: 44px;
-        margin: 0;
-        padding: 12px;
+        // margin: 0;
+        // padding: 12px;
         color: #afb1b8;
         background-color: $wright-color;
         border-radius: 50%;
@@ -49,9 +49,9 @@
 .workers-social__link:hover .workers-social__icon, .workers-social__link:focus .workers-social__icon {
         fill: $wright-color;
 }
-.workers-social__item:not(:last-child) {
-        margin-right: 10px;
-}
+// .workers-social__item:not(:last-child) {
+//         margin-right: 10px;
+// }
 
 .workers-social__icon {
         fill: currentColor;
