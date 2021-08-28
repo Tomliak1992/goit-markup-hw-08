@@ -52,8 +52,12 @@ h1, h2, h3, p {
     }
 }
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    @media screen and (min-width: 480px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 .navigation__link:hover,
 .navigation__link:focus,

@@ -1,5 +1,5 @@
 .filter {
-    // display: flex;
+    display: inline-block;
     // justify-content: center;
     // margin-bottom: 50px;
 }
@@ -28,9 +28,9 @@
         }
 }
 
-.filter__item:not(:last-child) {
-    // margin-right: 8px;
-}
+// .filter__item:not(:last-child) {
+//     margin-right: 8px;
+// }
 
   
 .section__title--visually-hidden {

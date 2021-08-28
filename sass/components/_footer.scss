@@ -3,8 +3,14 @@
     background-color: #2f303a;
 }
 .footer__container {
-    // display: flex;
+    display: inline-block;
     // align-items: baseline;
+    @media screen and (min-width: 480px) {
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    }
 }
 .footer-contact {
     font-style: normal;
@@ -18,7 +24,7 @@
 }
 .address {
     display: inline-block;
-//     margin-top: 20px;
+    margin-top: 20px;
 }
 .address__text {
     font-style: normal;
@@ -26,14 +32,14 @@
     color: $wright-color;
   }
 .address__item:not(:last-child) {
-    // margin-bottom: 9px;
+    margin-bottom: 9px;
   }
 
    
   
-.footer-social {
-    // margin-left: 70px;
-}
+// .footer-social {
+//     margin-left: 70px;
+// }
 .footer-social__title {
     font-weight: bold;
     font-size: 14px;
@@ -41,19 +47,33 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $wright-color;
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 480px) {
+        margin-top: 60px;
+
+    }
 }
 .footer-social__pages {
-    // display: flex;
+    display: flex;
+    align-content: center;
+    align-items: center;
     list-style: none;
-    // margin: 0;
-    // padding: 0;
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 480px) {
+        // display: inline-block;
+        // align-content: center;
+        // align-items: center; 
+    }
 }
+    
+
+
 .footer-social__link {
-        // width: 44px;
-        // height: 44px;
-        // margin: 0;
-        // padding: 12px;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+        padding: 12px;
         color: $wright-color;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
@@ -62,7 +82,7 @@
             &:focus {
             background-color: $accent-color;
             }
-}
+           
   
 .footer-social__icon {
     fill: currentColor;
@@ -71,9 +91,7 @@
 .footer-social__list {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-        &:not(:last-child) {
+        // &:not(:last-child) {
         // margin-right: 10px;
-        }
+        // }
 }
-
-  
