@@ -1,6 +1,11 @@
 .logo {
     // display: flex;
     // align-items: center;
+    @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    }
   } 
   .logo__link {
     font-family: Raleway;
