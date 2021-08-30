@@ -1,21 +1,22 @@
 .photo-section {
-    @media screen and (max-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
     display: none;
     }
-    // display: flex;
-    // justify-content: space-between;
+    
 } 
 .photo-section__thumb {
     position: relative;
 }
 .photo-section__bg {
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    // bottom: 0;
-    // width: 370px;
-    // height: 70px;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
 }
 

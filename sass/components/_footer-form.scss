@@ -1,18 +1,20 @@
-.footer-form-cection {
+.footer-form-section {
     position: relative;
     // width: 570px;
     // height: 86px;
     // margin-left: 93px;
+    
 }
 .footer-form-title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     color: $wright-color;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         margin-top: 60px;
+        text-align: center;
     }
 }
 
@@ -21,6 +23,13 @@
     display: grid;
     align-items: center;
     }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        padding-bottom: 60px;
+        display: grid;
+        align-items: center;
+        align-content: center;
+    }
+
 }
 .footer-form__input {
     // width: 358px;
@@ -39,7 +48,7 @@
         outline: none;
         color: $wright-color;
         }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
            
             max-width: 450px;
             height: 50px;
@@ -48,9 +57,18 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        // @media screen and (min-width: 481px) and (max-width: 768px) {
+        //     width: 450px;
+        //     height: 50px;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     padding-top: 15px;
+        //     padding-bottom: 15px;
+        //     margin-top: 20px;
+        //     margin-bottom: 20px;
+        // }
 }
 .footer-form__button {
-    // display: flex;
     position: relative;
     align-items: center;
     margin-left: 12px;
@@ -66,9 +84,9 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: $wright-color;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
     margin-left: auto;
-    margin-right: auto;;
+    margin-right: auto;
     }
 }
 .footer-form__icon {

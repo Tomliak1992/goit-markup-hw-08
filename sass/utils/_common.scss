@@ -44,12 +44,12 @@ h1, h2, h3, p {
         width: 100%;
     }
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
         max-width: 768px;
         width: 100%;
     }
 
-    @media screen and (min-widht: 1201px) {
+    @media screen and (min-widht: 769px) {
         max-width: 1200px;
         width: 100%;
     }
@@ -57,11 +57,11 @@ h1, h2, h3, p {
   .section {
     // padding-top: 94px;
     // padding-bottom: 94px;
-    @media screen and (max-width: 480px){
-        margin-top: 60px;
-        margin-bottom: 60px;
+    @media screen and (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
-    @media screen and (min-width: 481px){
+    @media screen and (min-width: 1200px){
         padding-top: 94px;
         padding-bottom: 94px;
     }

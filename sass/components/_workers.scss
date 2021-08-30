@@ -1,10 +1,15 @@
 .section--background {
     background-color: #f5f4fa;
 }
-// .workers {
-//         display: flex;
-//         justify-content: space-between;
-// }
+.workers {
+        
+        // justify-content: space-between;
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -15px;
+        }
+}
 .workers__title {
         font-weight: 500;
         font-size: 16px;
@@ -18,6 +23,11 @@
         @media screen and (max-width: 480px) {
         margin-bottom: 30px; 
         }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+                width: calc((100% - 4 * 15px) / 2);
+                margin: 15px;
+        }
+
 }
 .workers__text {
         font-size: 16px;
@@ -33,9 +43,9 @@
 }
 
 .workers-social {
-        // display: flex;
-        // justify-content: center;
-        @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 480px) {
                 display: inline-flex;
         }
 }

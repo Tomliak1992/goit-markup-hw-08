@@ -2,6 +2,7 @@
     position: relative;
     border: 1px solid #ececec;
     
+    
 }
 // .header-contacts {
 //     display: flex;
@@ -122,6 +123,10 @@
     &__close:hover {
         fill: $accent-color;
     }
+    @media screen and (min-width: 481px) {
+        display: none;
+        
+    }
 }
 .mobile-menu .mobile-menu__close {
     display: none;
@@ -144,14 +149,15 @@
 }
 
 .menu-container {
-    display: none;
     background-color: $wright-color;
     border: 1px solid $title-text-color;
     padding: 48px 40px;
     font-size: 20px;
     z-index: 999;
     
+    
     @media screen and (max-width: 480px) {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -160,10 +166,16 @@
             display: block;
         }
     }
+
         
-    // @media screen and (min-width: 768px) {
-    //     display: flex;
-    // }
+    @media screen and (min-width: 481px) {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        .header-social {
+            display: none;
+        }
+    }
         
 }
 

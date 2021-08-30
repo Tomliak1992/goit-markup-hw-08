@@ -1,6 +1,7 @@
 .footer {
     // padding: 60px 0;
     background-color: #2f303a;
+    
 }
 .footer__container {
     display: block;
@@ -11,7 +12,16 @@
     padding-bottom: 60px;
     text-align: center;
     }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-left: 76px;
+        
+    }
 }
+
+
 .footer-contact {
     font-style: normal;
     line-height: 1.7;
@@ -21,18 +31,30 @@
     &__tel {
     display: inline-block;
   }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+      margin-right: 165px;
+      
+  }
+
 }
 .address {
     display: inline-block;
     margin-top: 20px;
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        text-align: center;
+    }
 }
 .address__text {
     font-style: normal;
     line-height: 1.5;
     color: $wright-color;
-  }
+    
+}
 .address__item:not(:last-child) {
     margin-bottom: 9px;
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        text-align: center;
+    }
   }
 
    
