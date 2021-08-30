@@ -3,7 +3,10 @@
     // justify-content: center;
     // margin-bottom: 50px;
     @media screen and (min-width: 480px) {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    
     }
 }
 .filter__button {
@@ -31,6 +34,7 @@
         }
         @media screen and (min-width: 480px) {
         margin-right: 8px;
+        margin-bottom: 15px;
         }
 }
 
