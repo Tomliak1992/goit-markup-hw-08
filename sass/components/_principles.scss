@@ -17,8 +17,8 @@
     background-color: #f5f4fa;
     margin-bottom: 30px;
     border-radius: 4px;
-    @media screen and (min-width: 480px) {
-        width: 450px;
+    @media screen and (max-width: 480px) {
+        max-width: 450px;
         height: 120px;
         padding: 25px 0;
 
@@ -36,8 +36,8 @@
   
 .principles__item {
     // width: 270px;
-    @media screen and (min-width: 480px) {
-        width: 450px;
+    @media screen and (max-width: 480px) {
+        max-width: 450px;
         height: 226px;
         margin-bottom: 30px;
     }

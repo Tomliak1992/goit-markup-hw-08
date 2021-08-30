@@ -2,26 +2,32 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-   
+    
 }
   
 // .clients__item:not(:last-child) {
 //     margin-right: 30px;
 // }
-
 .clients__item {
     @media screen and (max-width: 480px) {
         width: calc((100% - 4 * 15px) / 2);
         margin: 15px;
-    
     }
+
+    // @media screen and (min-width: 768px) {
+    //     flex-wrap: wrap;
+    //     width: calc((100% - 6 * 15px) / 3);
+    //     margin: 15px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     justify-content: space-between;
+    // }
 }
 
 .clients__link {
         display: flex;
         justify-content: center;
-        margin: 0;
-        padding: 0;
         padding: 16px 32px;
         cursor: pointer;
         color: #afb1b8;
@@ -32,9 +38,11 @@
         &:focus {
         border-color: $accent-color;
         }
+       
      
 }
 .clients__icon {
+
     margin: 0;
     padding: 0;
     fill: currentColor;

@@ -33,11 +33,13 @@
 }
 
 .workers-social {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        @media screen and (max-width: 767px) {
+                display: inline-flex;
+        }
 }
 .workers-social__link {
-        content: '';
         width: 44px;
         height: 44px;
         margin: 0;
@@ -46,6 +48,8 @@
         background-color: $wright-color;
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+
 }  
 .workers-social__link:hover, .workers-social__link:focus {
         background-color: $accent-color;
