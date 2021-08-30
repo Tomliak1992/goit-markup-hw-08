@@ -1,5 +1,7 @@
 .photo-section {
+    @media screen and (max-width: 480px) {
     display: none;
+    }
     // display: flex;
     // justify-content: space-between;
 } 

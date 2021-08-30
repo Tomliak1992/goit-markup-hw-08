@@ -126,6 +126,14 @@ h1, h2, h3, p {
   color: #2196f3;
 }
 
+.header-contacts__link--current {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
 .header-contacts__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -276,6 +284,10 @@ h1, h2, h3, p {
   width: 1px;
   height: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.header-social__link::after:last-child {
+  display: none;
 }
 
 .hero {
@@ -636,8 +648,10 @@ textarea:focus {
   }
 }
 
-.photo-section {
-  display: none;
+@media screen and (max-width: 480px) {
+  .photo-section {
+    display: none;
+  }
 }
 
 .photo-section__thumb {
