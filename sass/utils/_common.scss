@@ -33,37 +33,35 @@ h1, h2, h3, p {
     margin-bottom: 50px;
 
 }
-  .container {
-    // width: 1200px;
+.container {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 
-    @media screen and (max-width: 480px){
-        max-width: 480px;
-        width: 100%;
+    @media screen and (min-width: 480px){
+        width: 480px;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        max-width: 768px;
-        width: 100%;
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        
     }
-
-    @media screen and (min-widht: 769px) {
-        max-width: 1200px;
-        width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        
     }
 }
-  .section {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
-    @media screen and (max-width: 768px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+
+.section {
+   padding-top: 60px;
+   padding-bottom: 60px;
+
     @media screen and (min-width: 1200px){
         padding-top: 94px;
         padding-bottom: 94px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .navigation__link:hover,

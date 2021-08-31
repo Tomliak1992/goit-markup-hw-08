@@ -1,13 +1,94 @@
-.section--background {
-    background-color: #f5f4fa;
-}
-.workers {
+// .section--background {
+//     background-color: #f5f4fa;
+// }
+// .workers {
         
+//         // justify-content: space-between;
+//         margin: -15px;
+        
+// }
+
+// .workers__item {
+//         align-items: center;
+//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//         0px 2px 1px rgba(0, 0, 0, 0.2);
+//         border-radius: 0px 0px 4px 4px;
+//         width: 460px;
+//         height: 522px;
+//         margin-bottom: 70px;
+//         @media screen and (min-width: 768px) {
+//         width: 354px;
+//         height: 536px;
+//         width: calc((100% - 4 * 15px) / 2);
+//         margin: 15px;       
+//         }
+        
+// }     
+// .workers__title {
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 1.18;
+//         margin-bottom: 10px;
+// }
+
+// .workers__text {
+//         font-size: 16px;
+//         margin-bottom: 16px;
+// }
+// .workers__thumb {
+//         text-align: center;
+//         padding-top: 30px;
+//         padding-bottom: 36px;
+//         background-color: $wright-color;
+//         border-radius: inherit;
+    
+ 
+// }
+
+// .workers-social {       
+//         display: flex;
+//         justify-content: center;
+        
+// }
+// .workers-social__link {
+//         width: 44px;
+//         height: 44px;
+//         margin: 0;
+//         padding: 12px;
+//         color: #afb1b8;
+//         background-color: $wright-color;
+//         border-radius: 50%;
+//         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+
+// }  
+// .workers-social__link:hover, .workers-social__link:focus {
+//         background-color: $accent-color;
+// }
+// .workers-social__link:hover .workers-social__icon, .workers-social__link:focus .workers-social__icon {
+//         fill: $wright-color;
+// }
+// // .workers-social__item:not(:last-child) {
+// //         margin-right: 10px;
+// // }
+
+// .workers-social__icon {
+//         fill: currentColor;
+// } 
+
+.section--background {
+        background-color: #f5f4fa;
+    }
+.workers {
         // justify-content: space-between;
-        @media screen and (min-width: 481px) and (max-width: 768px) {
-                display: flex;
-                flex-wrap: wrap;
-                margin: -15px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
         }
 }
 .workers__title {
@@ -20,14 +101,17 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        @media screen and (max-width: 480px) {
         margin-bottom: 30px; 
-        }
-        @media screen and (min-width: 481px) and (max-width: 768px) {
+        @media screen and (min-width: 768px) {
                 width: calc((100% - 4 * 15px) / 2);
                 margin: 15px;
         }
-
+        @media screen and (min-width: 1200px) {
+                width: 270px;
+                height: 428px;
+                margin: 0;
+        }
+    
 }
 .workers__text {
         font-size: 16px;
@@ -39,15 +123,13 @@
         padding-bottom: 36px;
         background-color: $wright-color;
         border-radius: inherit;
- 
+     
 }
-
+    
 .workers-social {
         display: flex;
         justify-content: center;
-        @media screen and (max-width: 480px) {
-                display: inline-flex;
-        }
+        
 }
 .workers-social__link {
         width: 44px;
@@ -58,8 +140,6 @@
         background-color: $wright-color;
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-
 }  
 .workers-social__link:hover, .workers-social__link:focus {
         background-color: $accent-color;
@@ -70,7 +150,7 @@
 .workers-social__item:not(:last-child) {
         margin-right: 10px;
 }
-
+    
 .workers-social__icon {
         fill: currentColor;
 } 

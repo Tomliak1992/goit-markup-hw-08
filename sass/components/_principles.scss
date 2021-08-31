@@ -1,9 +1,32 @@
 
 .principles {
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
     margin: -15px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+.principles__item {
+    width: 450px;
+    height: 226px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 251px;
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+       
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin: 0%;
     }
 }
 .principles__title {
@@ -12,27 +35,33 @@
     line-height: 1.42;
     margin-bottom: 10px;
     color: $title-text-color;
-    @media screen and (max-width: 480px) {
-        text-align: center;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+    text-align: start;
     }
+    
 }
 .principles__tumb {
     display: flex;
     justify-content: center;
-    // width: 270px;
-    // height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
     border-radius: 4px;
-    @media screen and (max-width: 480px) {
-        max-width: 450px;
+    width: 450px;
+    height: 120px;
+    padding: 25px 190px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 354px;
         height: 120px;
         padding: 25px 0;
     }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        max-width: 354px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        width: 270px;
         height: 120px;
-        padding: 25px 0;
     }
     
 }
@@ -41,20 +70,7 @@
     line-height: 1.7;
 }
   
-.principles__item {
-    // width: 270px;
-    @media screen and (max-width: 480px) {
-        max-width: 450px;
-        height: 226px;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        max-width: 354px;
-        height: 251px;
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-    }
-}
+
 // .principles__item:not(:last-child) {
 //     margin-right: 30px;
 // }

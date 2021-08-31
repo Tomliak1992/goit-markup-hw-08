@@ -1,10 +1,10 @@
 .photo-section {
+    display: none;
+    @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 768px) {
-    display: none;
     }
-    
+        
 } 
 .photo-section__thumb {
     position: relative;

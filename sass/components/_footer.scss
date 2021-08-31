@@ -6,56 +6,46 @@
 .footer__container {
     display: block;
     // align-items: baseline;
-    @media screen and (max-width: 480px) {
     align-items: center;
     padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     text-align: center;
-    }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 60px;
-        padding-left: 76px;
-        
-    }
 }
 
-
+.footer__info {
+    padding-bottom: 60px;
+}
 .footer-contact {
+    
     font-style: normal;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-  
+    margin-right: 165px;
+    align-content: center;
+    display: contents;
     &__tel {
-    display: inline-block;
+    display: contents;
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin-right: 165px;
-      
-  }
-
 }
 .address {
     display: inline-block;
     margin-top: 20px;
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        text-align: center;
-    }
+    text-align: center;
+    
 }
 .address__text {
     font-style: normal;
     line-height: 1.5;
     color: $wright-color;
+    text-align: center;
     
 }
 .address__item:not(:last-child) {
     margin-bottom: 9px;
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-        text-align: center;
-    }
-  }
+   padding-right: 124px;
+    
+}
 
    
   
@@ -71,20 +61,18 @@
     text-transform: uppercase;
     color: $wright-color;
     margin-bottom: 20px;
-    @media screen and (max-width: 480px) {
-        margin-top: 60px;
-        text-align: center;
-    }
+    text-align: center;
+    
 }
 .footer-social__pages {
     display: inline-flex;
     list-style: none;
     // margin: 0;
     // padding: 0;
-    @media screen and (max-width: 480px) {
+
         margin-left: auto;
         margin-right: auto;
-    }
+    
     
 }
 .footer-social__link {
@@ -112,4 +100,17 @@
         &:not(:last-child) {
         margin-right: 10px;
         }
+}
+
+.footer-flex {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+ 
+    }
+        
+    
+    
+
 }
