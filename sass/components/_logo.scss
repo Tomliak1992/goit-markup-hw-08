@@ -1,15 +1,16 @@
 .logo {
     // display: flex;
     // align-items: center;
-    @media screen and (max-width: 480px) {
+    
     margin: 16px 0;
-    }
+
   } 
   .logo__link {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     color: $accent-color;
+
   }
     
   .logo__span--black {

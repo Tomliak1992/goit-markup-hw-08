@@ -1,20 +1,19 @@
 .footer {
-    // padding: 60px 0;
-    background-color: #2f303a;
-    
+    background-color: #2f303a;  
 }
 .footer__container {
-    display: block;
-    // align-items: baseline;
-    align-items: center;
-    padding-top: 60px;
-    // padding-bottom: 60px;
-    text-align: center;
+    padding: 60px 0;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
-.footer__info {
-    padding-bottom: 60px;
-}
+// .footer__info {
+//     padding-bottom: 60px;
+//     @media screen and (min-width: 1200px) {
+//         padding: 60px 0;
+//     }  
+// }
 .footer-contact {
     
     font-style: normal;
@@ -28,10 +27,22 @@
     display: contents;
   }
 }
+
+.footer__info {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+}
 .address {
     display: inline-block;
     margin-top: 20px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
+    
+    
     
 }
 .address__text {
@@ -39,20 +50,30 @@
     line-height: 1.5;
     color: $wright-color;
     text-align: center;
+    text-align: start;
+    
     
 }
 .address__item:not(:last-child) {
     margin-bottom: 9px;
-   padding-right: 124px;
+    padding-right: 124px;
     
 }
 
-   
   
-// .footer-social {
-//     margin-left: 70px;
+.footer-social {
+    padding-top: 60px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+        margin-left: 70px;
+    }
     
-// }
+}
 .footer-social__title {
     font-weight: bold;
     font-size: 14px;
@@ -62,16 +83,16 @@
     color: $wright-color;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
     
 }
 .footer-social__pages {
     display: inline-flex;
     list-style: none;
-    // margin: 0;
-    // padding: 0;
 
-        margin-left: auto;
-        margin-right: auto;
+        
     
     
 }
@@ -107,8 +128,8 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
- 
     }
+
         
     
     
