@@ -55,7 +55,7 @@
 
 }
 .menu-container.is-open {
-    display: block;
+    display: none;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-grow: 1;
