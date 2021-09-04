@@ -1,6 +1,7 @@
 .header {
     position: relative;
-    // height: 80px;
+    border-bottom: 1px solid #ECECEC;
+
 
 }
 
@@ -43,7 +44,7 @@
     background-color: white;
     font-size: 20px;
     padding: 48px 40px; 
-    z-index: 999;   
+    z-index: 1;   
     &.is-open {
         display: block;
     }
