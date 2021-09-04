@@ -97,8 +97,6 @@ h1, h2, h3, p {
 }
 
 .navigation {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,6 +136,10 @@ h1, h2, h3, p {
   display: none;
 }
 
+.menu-button .menu-button__icon {
+  display: block;
+}
+
 .menu-button.is-open .menu-button__cross {
   display: block;
 }
@@ -165,6 +167,10 @@ h1, h2, h3, p {
     left: 0;
     width: 100%;
   }
+}
+
+.menu-container.is-open {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,6 +232,9 @@ h1, h2, h3, p {
   display: inline-block;
   font-weight: 500;
   color: #212121;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.02em;
   text-decoration: none;
   vertical-align: middle;
@@ -237,19 +246,32 @@ h1, h2, h3, p {
   color: #2196f3;
 }
 
+.navigation-list__link:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.navigation-list__link:last-child {
+  margin-bottom: 306px;
+}
+
 @media screen and (min-width: 768px) {
   .navigation-list__link {
     position: relative;
     display: inline-block;
-    font-weight: 500;
-    color: var(--title-text-color);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    vertical-align: middle;
     padding-top: 32px;
     padding-bottom: 32px;
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .navigation-list__link:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .navigation-list__link:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -266,6 +288,12 @@ h1, h2, h3, p {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-list__link--current {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -286,10 +314,13 @@ h1, h2, h3, p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -358,8 +389,8 @@ h1, h2, h3, p {
 
 @media screen and (min-width: 1200px) {
   .header-contacts__item:not(:last-child) {
+    margin-left: 10px;
     margin-bottom: 0;
-    margin-right: 30px;
   }
 }
 
@@ -596,15 +627,10 @@ h1, h2, h3, p {
           transform: translate(-50%, -50%) scale(1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    height: 581px;
     width: 528px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
+    height: 581px;
   }
 }
 
@@ -684,12 +710,7 @@ h1, h2, h3, p {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 40px;
-}
-
-@media screen and (max-width: 480px) {
-  .modal-form__input {
-    width: 370px;
-  }
+  width: 370px;
 }
 
 .modal-form__input::-webkit-input-placeholder {
@@ -750,7 +771,7 @@ textarea:focus {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .confidential-label {
     display: -webkit-box;
   }
@@ -775,13 +796,8 @@ textarea:focus {
   -webkit-text-decoration: revert;
           text-decoration: revert;
   color: #2196f3;
-}
-
-@media screen and (max-width: 480px) {
-  .confidential-label a {
-    font-size: 12px;
-    line-height: 1.17;
-  }
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .checkbox {
@@ -809,7 +825,7 @@ textarea:focus {
 
 @media screen and (min-width: 768px) {
   .checkbox__text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
   }
 }
