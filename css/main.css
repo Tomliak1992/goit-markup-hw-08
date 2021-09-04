@@ -464,7 +464,7 @@ h1, h2, h3, p {
   background-color: #2f303a;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile2x.jpg");
@@ -478,7 +478,7 @@ h1, h2, h3, p {
   }
 }
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tablet2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet2x.jpg");
@@ -504,7 +504,7 @@ h1, h2, h3, p {
   }
 }
 
-@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop2x.jpg");
@@ -587,7 +587,7 @@ h1, h2, h3, p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   position: absolute;
   top: 50%;
@@ -821,12 +821,9 @@ textarea:focus {
   border-color: #2196f3;
 }
 
-.principles {
-  margin: -15px;
-}
-
 @media screen and (min-width: 768px) {
   .principles {
+    margin: -15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -893,8 +890,7 @@ textarea:focus {
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
-  max-width: 450px;
-  height: 120px;
+  padding: 25px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1175,9 +1171,6 @@ textarea:focus {
 
 .footer {
   background-color: #2f303a;
-}
-
-.footer__container {
   padding: 60px 0;
 }
 
@@ -1323,13 +1316,13 @@ textarea:focus {
 
 .footer-form-section {
   position: relative;
-  padding-top: 72px;
+  margin-top: 72px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-form-section {
     margin-left: 93px;
-    padding-top: 12px;
+    margin-top: 12px;
   }
 }
 

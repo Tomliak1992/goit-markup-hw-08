@@ -1,7 +1,7 @@
 
 .principles {
-    margin: -15px;
     @media screen and (min-width: 768px) {
+        margin: -15px;
         display: flex;
         flex-wrap: wrap;
         
@@ -47,9 +47,7 @@
     background-color: #f5f4fa;
     margin-bottom: 30px;
     border-radius: 4px;
-    max-width: 450px;
-    height: 120px;
-    // padding: 25px 190px;
+    padding: 25px 0;
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
