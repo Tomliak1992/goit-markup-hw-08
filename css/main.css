@@ -116,7 +116,7 @@ h1, h2, h3, p {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #2196f3;
+  background-color: white;
 }
 
 .menu-button__icon:hover {
@@ -148,6 +148,8 @@ h1, h2, h3, p {
 .menu-container {
   background-color: white;
   font-size: 20px;
+  padding: 48px 40px;
+  z-index: 999;
 }
 
 .menu-container.is-open {
@@ -173,10 +175,11 @@ h1, h2, h3, p {
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin-left: 88px;
+    padding: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu-container.is-open {
     margin-left: 93px;
   }
