@@ -1,16 +1,13 @@
-// .logo {
-//     // display: flex;
-//     // align-items: center;
+
     
   
 
-//   } 
-  .logo__link {
+
+  .logo {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     color: $accent-color;
-
   }
     
   .logo__span--black {
@@ -20,3 +17,13 @@
   .logo__span--wright {
     color: $wright-color;
   }
+  .logo__header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    }
+  }
+

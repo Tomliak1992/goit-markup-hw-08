@@ -11,7 +11,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
     width: 528px;
     height: 581px;
     }
@@ -53,7 +53,12 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    &:not(:last-child) {
     margin-bottom: 10px;
+    }
+    &:last-child {
+        margin-bottom: 30px;
+    }
 }
   
 .modal-form__icon {
@@ -114,7 +119,7 @@ textarea {
     letter-spacing: 0.06em;
     cursor: pointer;
     border: transparent;
-    margin-top: 30px;
+   
 }
   
 .modal-form__input:focus ~ .modal-form__icon {

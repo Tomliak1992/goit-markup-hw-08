@@ -16,21 +16,21 @@
 
 <body>
     <header class="header">
-        <div class="container logo">
-                <nav class="navigation">
-                    <a class="logo__link" href="/">Web<span class="logo__span--black">Studio</span></a>
-                    <button
-                    data-menu-button
-                    class="menu-button is-open" 
-                    aria-expanded="false" 
-                    aria-controls="menu-container" 
-                    type="button">
-                        <svg width="24" height="16" aria-label="переключатель мобильного меню">
-                            <use class="menu-button__icon" href="./images/icons.svg#icon-menu_24px"></use>
-                            <use class="menu-button__cross" href="./images/icons.svg#icon-close_24px"></use>
-                        </svg>
-                    </button>  
-                    <div class="menu-container is-open" id="menu-container" data-menu>    
+        <div class="container header-container">
+            <button
+            data-menu-button
+            class="menu-button is-open" 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            type="button">
+                <svg width="24" height="16" aria-label="переключатель мобильного меню">
+                    <use class="menu-button__icon" href="./images/icons.svg#icon-menu_24px"></use>
+                    <use class="menu-button__cross" href="./images/icons.svg#icon-close_24px"></use>
+                </svg>
+            </button>  
+            <a class="logo logo__header" href="/">Web<span class="logo__span--black">Studio</span></a> 
+                <nav class="navigation">  
+                    <div class="menu-container" id="menu-container" data-menu>    
                         <ul class="navigation-list">
                             <li class="navigation-list__item">
                                 <a class="navigation-list__link" href="./index.html">Студия</a>
@@ -75,10 +75,7 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
-                
-                
-                
+                </nav>      
         </div>
     </header>
     <main>
@@ -187,7 +184,7 @@
                                 <div class="produkt__thumb">
                                     <img 
                                         src="./images/headphone1x.jpg"
-                                        srcset="headphone1x.jpg 450w, ./images/headphone2x.jpg 900w"  
+                                        srcset="./images/headphone1x.jpg 450w, ./images/headphone2x.jpg 900w"  
                                         sizes="(min-width: 1200px) 33.3333vw, (min-width: 768px) 50vw, 100vw"
                                         alt="навушники" 
                                     />
@@ -213,7 +210,7 @@
                                 <div class="produkt__thumb">
                                     <img 
                                         src="./images/box1x.jpg"
-                                        srcset="box1x.jpg 450w, ./images/box2x.jpg 900w" 
+                                        srcset="./images/box1x.jpg 450w, ./images/box2x.jpg 900w" 
                                         sizes="(min-width: 1200px) 33.3333vw, (min-width: 768px) 50vw, 100vw"
                                         alt="дві коробочки" 
                                     />
@@ -239,7 +236,7 @@
                                 <div class="produkt__thumb">
                                     <img 
                                         src="./images/monitor1x.jpg"
-                                        srcset="monitor1x.jpg 450w, ./images/monitor2x.jpg 900w"  
+                                        srcset="./images/monitor1x.jpg 450w, ./images/monitor2x.jpg 900w"  
                                         sizes="(min-width: 1200px) 33.3333vw, (min-width: 768px) 50vw, 100vw"
                                         alt="монітор" 
                                     />
@@ -346,13 +343,13 @@
         <div class="container footer__container">
             <div class="footer-flex">
                 <div class="footer__info">
-                    <a class="logo__link" href="/">Web<span class="logo__span--wright">Studio</span></a>
+                    <a class="logo logo__footer" href="/">Web<span class="logo__span--wright">Studio</span></a>
                     <address>
                         <ul class="address">
-                            <li class="address__text adress__item">г. Киев, пр-т Леси Украинки, 26</li>
-                            <li class="adress__item"><a class="footer-contact"
+                            <li class="address__text address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li class="address__item"><a class="footer-contact"
                                     href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li class="adress__item"><a class="footer-contact footer-contact__tel" href="tel:+380961111111">+38 096 111 11
+                            <li class="address__item"><a class="footer-contact footer-contact__tel" href="tel:+380961111111">+38 096 111 11
                                     11</a></li>
                         </ul>
                     </address>
